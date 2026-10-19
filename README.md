@@ -8,13 +8,13 @@
 Generate new SSH key on control device
 
 ```bash
-ssh-keygen -t ed25519 -f ~/.ssh/services
+ssh-keygen -t ed25519 -f ~/.ssh/zeus
 ```
 
 Copy SSH key from control device to server
 
 ```bash
-ssh-copy-id -i ~/.ssh/service.pub username@address
+ssh-copy-id -i ~/.ssh/zeus.pub zeus@address
 ```
 
 ## Installation
