@@ -34,13 +34,13 @@ sudo apt install ansible git
 Clone repository to server
 
 ```bash
-git clone https://github.com/spencerdennison/services.git
+git clone https://github.com/spencerdennison/zeus.git
 ```
 
 Change into Ansible directory on server
 
 ```bash
-cd services/ansible
+cd zeus/ansible
 ```
 
 Run Ansible playbooks on server
