@@ -14,8 +14,8 @@
       WEBUI_PORT: '2004'
       TORRENTING_PORT: '6881'
     volumes:
-      - '/opt/qbittorrent/config:/config'
-      - '/opt/navidrome/music:/downloads'
+      - '/srv/docker/qbittorrent/config:/config'
+      - '/srv/docker/navidrome/music:/downloads'
     networks:
       - name: '{{ network }}'
     state: started

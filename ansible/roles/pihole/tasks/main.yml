@@ -15,7 +15,7 @@
       FTLCONF_misc_dnsmasq_lines: 'address=/*{{ domain }}/{{ ip }}'
       FTLCONF_dns_upstreams: '1.1.1.1;1.0.0.1'
     volumes:
-      - '/opt/pihole:/etc/pihole'
+      - '/srv/docker/pihole:/etc/pihole'
     networks:
       - name: '{{ network }}'
     state: started
