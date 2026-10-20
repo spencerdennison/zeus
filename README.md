@@ -62,5 +62,5 @@ ssh-keygen -t ed25519 -f ~/.ssh/zeus
 Copy SSH key from control device to server
 
 ```bash
-ssh-copy-id -i ~/.ssh/zeus.pub zeus@address
+ssh-copy-id -i ~/.ssh/zeus.pub administrator@zeus.spencerdennison.com
 ```
