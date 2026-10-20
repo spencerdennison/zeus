@@ -7,7 +7,7 @@
     mode: '0644'
   notify: restart networking
 
-- name: install resolveconf
+- name: install resolvconf
   ansible.builtin.apt:
     name: resolvconf
     state: present
