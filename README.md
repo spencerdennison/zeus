@@ -5,18 +5,6 @@
 - Add Cloudflare DNS record pointing to server
 - Install Debian on server
 
-Generate new SSH key on control device
-
-```bash
-ssh-keygen -t ed25519 -f ~/.ssh/zeus
-```
-
-Copy SSH key from control device to server
-
-```bash
-ssh-copy-id -i ~/.ssh/zeus.pub zeus@address
-```
-
 ## Installation
 
 Update and upgrade apt package repository on server
@@ -61,4 +49,18 @@ Reboot server
 
 ```bash
 sudo reboot
+```
+
+Generate new SSH key on control device
+
+```bash
+ssh-keygen -t ed25519 -f ~/.ssh/zeus
+```
+
+- Allow SSH using password, ensure to revert
+
+Copy SSH key from control device to server
+
+```bash
+ssh-copy-id -i ~/.ssh/zeus.pub zeus@address
 ```
