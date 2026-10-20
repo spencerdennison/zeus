@@ -2,3 +2,8 @@
   ansible.builtin.service:
     name: networking
     state: restarted
+
+- name: restart resolveconf
+  ansible.builtin.service:
+    name: resolveconf
+    state: restarted
