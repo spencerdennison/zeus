@@ -3,7 +3,7 @@
     name: networking
     state: restarted
 
-- name: restart resolveconf
+- name: restart resolvconf
   ansible.builtin.service:
-    name: resolveconf
+    name: resolvconf
     state: restarted

@@ -9,14 +9,14 @@
 
 - name: install resolveconf
   ansible.builtin.apt:
-    name: resolveconf
+    name: resolvconf
     state: present
 
 - name: add router nameserver
   ansible.builtin.template:
-    src: resolve.conf.j2
+    src: resolv.conf.j2
     dest: /etc/resolv.conf 
     owner: root
     group: root
     mode: '0644'
-  notify: restart resolveconf
+  notify: restart resolvconf
