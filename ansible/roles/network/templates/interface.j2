@@ -3,6 +3,8 @@ iface lo inet loopback
 
 auto {{ ansible_default_ipv4.interface }}
 iface {{ ansible_default_ipv4.interface }} inet static
+    wpa-ssid Dennison
+    wpa-psk {{ wifi_password }}
     address {{ address }}
     netmask {{ netmask }}
     gateway {{ gateway }}
