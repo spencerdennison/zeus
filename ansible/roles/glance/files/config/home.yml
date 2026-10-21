@@ -36,6 +36,10 @@
               description: Torrent
               icon: sh:qbittorrent
               url: https://torrent.spencerdennison.com
+            forever-world:
+              name: Minecraft
+              description: Forever World
+              icon: sh:minecraft
 
     - size: small
       widgets:
