@@ -24,7 +24,7 @@
             navidrome:
               name: Navidrome
               description: Music
-              icon: sh:caddy
+              icon: sh:navidrome
               url: https://music.spencerdennison.com
             pihole:
               name: Pi-hole
