@@ -42,6 +42,16 @@
         - type: server-stats
           servers:
             - type: local
+              cpu-temp-sensor: k10temp_tctl
+              mountpoints:
+                '/host/var':
+                  name: /var
+                '/host':
+                  name: /
+                '/host/srv':
+                  name: /srv
+                '/host/boot/efi':
+                  hide: true
               name: zeus
             - type: remote
               name: ares
