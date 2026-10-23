@@ -2,8 +2,6 @@
   community.docker.docker_container:
     name: caddy
     image: ghcr.io/caddybuilds/caddy-cloudflare:latest
-    recreate: true
-    restart: true
     ports:
       - '2000:80'
       - '443:443'
@@ -16,4 +14,6 @@
       - caddy_config:/config
     networks:
       - name: '{{ network }}'
+    restart_policy: 'unless-stopped'
+    restart: true
     state: started
