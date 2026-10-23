@@ -7,34 +7,42 @@
 
 ## Installation
 
-Update and upgrade apt package repository on server
+- All steps are performed on the server
+
+Update and upgrade apt package repository
 
 ```bash
 sudo apt update && sudo apt upgrade
 ```
 
-Install Ansible and Git on server
+Install Ansible and Git
 
 ```bash
 sudo apt install ansible git
 ```
 
-Clone repository to server
+Clone repository
 
 ```bash
 git clone https://github.com/spencerdennison/zeus.git
 ```
 
-Change into Ansible directory on server
+Change directory to zeus
 
 ```bash
-cd zeus/ansible
+cd zeus
 ```
 
-Run Ansible playbooks on server
+Allow execute permissions for provisioning script
 
 ```bash
-ansible-playbook local.yml --ask-become-pass --ask-vault-pass
+chmod +x provision.sh
+```
+
+Run Ansible playbooks
+
+```bash
+./provision
 ```
 
 ## Post-Installation
