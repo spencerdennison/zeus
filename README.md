@@ -1,4 +1,11 @@
+   * [Pre-Installation](#pre-installation)
+   * [Installation](#installation)
+   * [Post-Installation](#post-installation)
+   * [Architecture](#architecture)
+
 # zeus
+
+Configuration for my server.
 
 ## Pre-Installation
 
@@ -65,10 +72,14 @@ Generate new SSH key on control device
 ssh-keygen -t ed25519 -f ~/.ssh/zeus
 ```
 
-- Allow SSH using password, ensure to revert
+- Briefly Allow SSH to server using password, ensure to revert
 
 Copy SSH key from control device to server
 
 ```bash
 ssh-copy-id -i ~/.ssh/zeus.pub administrator@zeus.spencerdennison.com
 ```
+
+## Architecture
+
+![Architecture Diagram](docs/architecture-diagram.png)
