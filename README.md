@@ -2,7 +2,7 @@
 
 Configuration for my server.
 
-# Table of Contents   
+## Table of Contents   
 
 * [Pre-Installation](#pre-installation)
 * [Installation](#installation)
