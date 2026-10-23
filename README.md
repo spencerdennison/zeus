@@ -83,4 +83,4 @@ ssh-copy-id -i ~/.ssh/zeus.pub administrator@zeus.spencerdennison.com
 
 ## Rack
 
-![Rack](assets/rack.jpg)
+![Rack](docs/rack.jpg)
