@@ -1,8 +1,10 @@
 server:
-  assets-path: /app/assets
 
 theme:
-  custom-css-file: /assets/user.css
+  background-color: 0 0 0
+  primary-color: 100 100 100
+  positive-color: 145 100 45
+  negative-color: 0 100 55
 
 pages:
   - $include: home.yml

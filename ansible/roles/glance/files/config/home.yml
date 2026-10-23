@@ -1,4 +1,27 @@
 - name: Home
+  head-widgets:
+    - type: markets
+      markets:
+        - symbol: ES=F
+          chart-link: https://www.tradingview.com/chart/?symbol=CME_MINI%3AES1%21
+          symbol-link: https://www.tradingview.com/symbols/CME_MINI-ES1!/
+          name: SP500 Futures
+        - symbol: ^TNX
+          chart-link: https://www.tradingview.com/chart/?symbol=TVC%3ATNX
+          symbol-link: https://www.tradingview.com/symbols/TVC-TNX/
+          name: 10-Yr Bond
+        - symbol: ^VIX
+          chart-link: https://www.tradingview.com/chart/?symbol=TVC%3AVIX
+          symbol-link: https://www.tradingview.com/symbols/TVC-VIX/
+          name: Volatility
+        - symbol: GC=F
+          chart-link: https://www.tradingview.com/chart/?symbol=OANDA%3AXAUUSD
+          symbol-link: https://www.tradingview.com/symbols/XAUUSD/?exchange=OANDA
+          name: Gold
+        - symbol: BTC-USD
+          chart-link: https://www.tradingview.com/chart/?symbol=CRYPTO%3ABTCUSD
+          symbol-link: https://www.tradingview.com/symbols/BTCUSD/?exchange=CRYPTO
+          name: Bitcoin
   hide-desktop-navigation: true
   columns:
     - size: small
@@ -7,6 +30,31 @@
           service: pihole-v6
           url: https://dns.spencerdennison.com
           password: ${WEBSERVER_API_PASSWORD}
+
+        - type: bookmarks
+          groups:
+            - title: Essential
+              color: 55 100 50
+              links:
+              - title: Email
+                url: https://mail.proton.me/u/0/inbox
+              - title: Github
+                url: https://github.com/spencerdennison
+              - title: WGU
+                url: https://my.wgu.edu
+              - title: Torn
+                url: https://www.torn.com/index.php
+              - title: YouTube
+                url: https://www.youtube.com
+            - title: Work
+              color: 220 100 55
+              links:
+                - title: Indeed
+                  url: https://www.indeed.com
+                - title: Docs
+                  url: https://docs.google.com
+                - title: LinkedIn
+                  url: https://www.linkedin.com
 
     - size: full
       widgets:
@@ -37,8 +85,35 @@
               icon: sh:qbittorrent
               url: https://torrent.spencerdennison.com
 
+        - type: rss
+          title: News
+          cache: 5m
+          style: horizontal-cards
+          feeds:
+            - url: https://hnrss.org/newest
+              title: Hacker News
+            - url: https://www.phoronix.com/rss.php
+              title: Phoronix
+            - url: https://selfh.st/rss/
+              title: selfh.st
+            - url: https://www.bleepingcomputer.com/feed/
+              title: BleepingComputer
+            - url: https://feeds.bbci.co.uk/news/world/rss.xml
+              title: BBC World
+            - url: https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml
+              title: BBC US
+            - url: https://feeds.bbci.co.uk/news/politics/rss.xml
+              title: BBC Politics
+            - url: https://feeds.bbci.co.uk/news/science_and_environment/rss.xml
+              title: BBC Science
+
     - size: small
       widgets:
+        - type: weather
+          units: imperial
+          hour-format: 12h
+          location: ${LOCATION}
+
         - type: server-stats
           servers:
             - type: local

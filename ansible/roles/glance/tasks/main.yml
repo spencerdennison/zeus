@@ -9,6 +9,7 @@
     env:
       WEBSERVER_API_PASSWORD: '{{ webserver_api_password }}'
       AGENT_TOKEN: '{{ agent_token }}'
+      LOCATION: '{{ location }}'
     volumes:
       - '{{ playbook_dir }}/roles/glance/files/config:/app/config'
       - '{{ playbook_dir }}/roles/glance/files/assets:/app/assets'
