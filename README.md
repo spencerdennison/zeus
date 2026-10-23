@@ -1,15 +1,13 @@
-# Table of Contents   
-
-<!--ts-->
-    * [Pre-Installation](#pre-installation)
-    * [Installation](#installation)
-    * [Post-Installation](#post-installation)
-    * [Architecture](#architecture)
-<!--te-->
-
 # zeus
 
 Configuration for my server.
+
+# Table of Contents   
+
+* [Pre-Installation](#pre-installation)
+* [Installation](#installation)
+* [Post-Installation](#post-installation)
+* [Architecture](#architecture)
 
 ## Pre-Installation
 
