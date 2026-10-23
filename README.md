@@ -1,7 +1,9 @@
-   * [Pre-Installation](#pre-installation)
-   * [Installation](#installation)
-   * [Post-Installation](#post-installation)
-   * [Architecture](#architecture)
+# Table of Contents   
+
+    * [Pre-Installation](#pre-installation)
+    * [Installation](#installation)
+    * [Post-Installation](#post-installation)
+    * [Architecture](#architecture)
 
 # zeus
 
