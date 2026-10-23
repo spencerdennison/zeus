@@ -8,6 +8,7 @@ Configuration for my server.
 * [Installation](#installation)
 * [Post-Installation](#post-installation)
 * [Architecture](#architecture)
+* [Rack](#rack)
 
 ## Pre-Installation
 
@@ -40,12 +41,6 @@ Change directory to zeus
 
 ```bash
 cd zeus
-```
-
-Allow execute permissions for provisioning script
-
-```bash
-chmod +x provision.sh
 ```
 
 Run Ansible playbooks
@@ -85,3 +80,7 @@ ssh-copy-id -i ~/.ssh/zeus.pub administrator@zeus.spencerdennison.com
 ## Architecture
 
 ![Architecture Diagram](docs/architecture-diagram.png)
+
+## Rack
+
+![Rack](assets/rack.jpg)
