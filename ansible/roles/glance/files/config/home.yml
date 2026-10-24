@@ -33,28 +33,27 @@
 
         - type: bookmarks
           groups:
-            - title: Essential
-              color: 55 100 50
               links:
+              - title: Cloudflare
+                url: https://dash.cloudflare.com/5b49d8a3ec85f2b892e832a10624bd88/home
+              - title: Docs
+                url: https://docs.google.com
               - title: Email
                 url: https://mail.proton.me/u/0/inbox
               - title: Github
                 url: https://github.com/spencerdennison
-              - title: WGU
-                url: https://my.wgu.edu
+              - title: Indeed
+                url: https://www.indeed.com
+              - title: LinkedIn
+                url: https://www.linkedin.com
+              - title: Tailscale
+                url: https://console.tailscale.com/admin/machines
               - title: Torn
                 url: https://www.torn.com/index.php
+              - title: WGU
+                url: https://my.wgu.edu
               - title: YouTube
                 url: https://www.youtube.com
-            - title: Work
-              color: 220 100 55
-              links:
-                - title: Indeed
-                  url: https://www.indeed.com
-                - title: Docs
-                  url: https://docs.google.com
-                - title: LinkedIn
-                  url: https://www.linkedin.com
 
     - size: full
       widgets:
