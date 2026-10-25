@@ -109,6 +109,7 @@
     - size: small
       widgets:
         - type: weather
+          title-url: https://radar.weather.gov/
           units: imperial
           hour-format: 12h
           location: ${LOCATION}
