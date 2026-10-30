@@ -34,6 +34,8 @@
         - type: bookmarks
           groups:
             - links:
+              - title: BOINC Stats
+              - url: https://www.boincstats.com/stats/-5/user/detail/257097893317/projectList
               - title: Cloudflare
                 url: https://dash.cloudflare.com/5b49d8a3ec85f2b892e832a10624bd88/home
               - title: Email
@@ -83,10 +85,15 @@
               description: Torrent
               icon: sh:qbittorrent
               url: https://torrent.spencerdennison.com
+            boinc:
+              name: BOINC
+              description: Volunteer
+              icon: di:boinc.webp
+              url: https://volunteer.spencerdennison.com
 
         - type: rss
           title: News
-          cache: 5m
+          cache: 1h
           style: horizontal-cards
           feeds:
             - url: https://hnrss.org/newest
