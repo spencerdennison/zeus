@@ -17,5 +17,4 @@
     networks:
       - name: '{{ network }}'
     restart_policy: 'unless-stopped'
-    restart: true
     state: started
