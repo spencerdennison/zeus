@@ -18,3 +18,7 @@ music.spencerdennison.com {
 torrent.spencerdennison.com {
     reverse_proxy qbittorrent:2004
 }
+
+volunteer.spencerdennison.com {
+    reverse_proxy boinc:8080
+}
