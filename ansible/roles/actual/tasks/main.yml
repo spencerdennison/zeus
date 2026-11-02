@@ -1,0 +1,12 @@
+- name: start container 
+  community.docker.docker_container:
+    name: actual
+    image: docker.io/actualbudget/actual-server:latest
+    ports:
+      - '5006:5006' 
+    volumes:
+      - '/srv/docker/actual:/data'
+    networks:
+      - name: '{{ network }}' 
+    restart_policy: 'unless-stopped'
+    state: started
