@@ -15,6 +15,6 @@
     - glance
     - navidrome
     - qbittorrent
-    - actual
     - boinc
+    - actual
     - tailscale
