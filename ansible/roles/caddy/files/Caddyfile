@@ -19,6 +19,10 @@ torrent.spencerdennison.com {
     reverse_proxy qbittorrent:2004
 }
 
+volunteer.spencerdennison.com {
+    reverse_proxy boinc:8080
+}
+
 finance.spencerdennison.com {
     encode gzip zstd
     reverse_proxy actual:5006

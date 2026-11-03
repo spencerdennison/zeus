@@ -83,6 +83,11 @@
               description: Torrent
               icon: sh:qbittorrent
               url: https://torrent.spencerdennison.com
+            boinc:
+              name: BOINC
+              description: Volunteer
+              icon: di:boinc.webp
+              url: https://volunteer.spencerdennison.com
             actual:
               name: Actual
               description: Finance
