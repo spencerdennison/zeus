@@ -1,16 +1,11 @@
 - name: start container
   community.docker.docker_container:
     name: boinc
-    image: lscr.io/linuxserver/boinc:latest
+    image: boinc/client
     ports:
-      - '2005:8080'
-      - '8181:8181'
-    env:
-      PUID: '1000'
-      PGID: '1000'
-    shm_size: '1GB'
+      - '2005:31416'
     volumes:
-      - '/srv/docker/boinc:/config'
+      - '/srv/docker/boinc:/var/lib/boinc'
     networks:
       - name: '{{ network }}'
     restart_policy: 'unless-stopped'

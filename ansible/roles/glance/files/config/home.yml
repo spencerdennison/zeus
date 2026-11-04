@@ -34,8 +34,6 @@
         - type: bookmarks
           groups:
             - links:
-              - title: BOINC Stats
-                url: https://www.boincstats.com/stats/-5/user/detail/257097893317/projectList
               - title: Cloudflare
                 url: https://dash.cloudflare.com/5b49d8a3ec85f2b892e832a10624bd88/home
               - title: Email
@@ -89,7 +87,7 @@
               name: BOINC
               description: Volunteer
               icon: di:boinc.webp
-              url: https://volunteer.spencerdennison.com
+              url: https://www.boincstats.com/stats/-5/user/detail/257097893317/projectList
             actual:
               name: Actual
               description: Finance
