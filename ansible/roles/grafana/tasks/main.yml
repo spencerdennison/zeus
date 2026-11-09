@@ -1,0 +1,23 @@
+- name: create owned folder
+  ansible.builtin.file:
+    path: /srv/docker/grafana
+    owner: '472'
+    group: '472'
+    mode: '0755'
+    state: directory
+
+- name: start container
+  community.docker.docker_container:
+    name: grafana
+    image: grafana/grafana
+    ports:
+      - '2007:3000'
+    env:
+      GF_SECURITY_ADMIN_USER: '{{ grafana_user }}'
+      GF_SECURITY_ADMIN_PASSWORD: '{{ grafana_password }}'
+    volumes:
+      - '/srv/docker/grafana/:/var/lib/grafana'
+    networks:
+      - name: '{{ network }}'
+    restart_policy: 'unless-stopped'
+    state: started
