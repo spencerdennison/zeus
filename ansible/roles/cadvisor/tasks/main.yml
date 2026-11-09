@@ -1,0 +1,17 @@
+- name: start container
+  community.docker.docker_container:
+    name: cadvisor
+    image: ghcr.io/google/cadvisor
+    ports:
+      - '2008:8080'
+    devices:
+      - '/dev/kmsg:/dev/kmsg'
+    volumes:
+      - '/:/rootfs:ro'
+      - '/var/run:/var/run:ro'
+      - '/sys:/sys:ro'
+      - '/var/lib/docker:/var/lib/docker:ro'
+    networks:
+      - name: '{{ network }}'
+    restart_policy: 'unless-stopped'
+    state: started
