@@ -12,9 +12,11 @@
     - docker
     - caddy
     - pihole
-    - glance
+    - prometheus
+    - node-exporter
+    - cadvisor
+    - grafana
+    - boinc
     - navidrome
     - qbittorrent
-    - boinc
-    - actual
     - tailscale

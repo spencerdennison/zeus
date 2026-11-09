@@ -8,7 +8,7 @@
       - '2001:80/tcp'
     env:
       TZ: 'America/Denver'
-      FTLCONF_webserver_api_password: '{{ webserver_api_password }}'
+      FTLCONF_webserver_api_password: '{{ pihole_api_password }}'
       FTLCONF_dns_listeningMode: 'ALL'
       FTLCONF_misc_dnsmasq_lines: 'address=/*{{ domain }}/{{ ip }}'
       FTLCONF_dns_upstreams: '1.1.1.1;1.0.0.1'
