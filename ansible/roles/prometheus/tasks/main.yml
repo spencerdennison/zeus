@@ -1,0 +1,21 @@
+- name: create owned folder
+  ansible.builtin.file:
+    path: /srv/docker/prometheus
+    owner: '65534'
+    group: '65534'
+    mode: '0755'
+    state: directory
+
+- name: start container
+  community.docker.docker_container:
+    name: prometheus
+    image: prom/prometheus
+    ports:
+      - '9090:9090'
+    volumes:
+      - '{{ playbook_dir }}/roles/prometheus/files/prometheus.yml:/etc/prometheus/prometheus.yml'
+      - '/srv/docker/prometheus/:/prometheus'
+    networks:
+      - name: '{{ network }}'
+    restart_policy: 'unless-stopped'
+    state: started
