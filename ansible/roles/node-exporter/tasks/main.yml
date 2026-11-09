@@ -1,0 +1,13 @@
+- name: start container
+  community.docker.docker_container:
+    name: node-exporter
+    image: prom/node-exporter
+    command:
+      - '--path.rootfs=/host'
+      - '--collector.cpu.info'
+    volumes:
+      - '/:/host:ro,rslave'
+    networks:
+      - name: '{{ network }}'
+    restart_policy: 'unless-stopped'
+    state: started
