@@ -19,11 +19,6 @@ torrent.spencerdennison.com {
     reverse_proxy qbittorrent:2004
 }
 
-finance.spencerdennison.com {
-    encode gzip zstd
-    reverse_proxy actual:5006
-}
-
 metrics.spencerdennison.com {
     reverse_proxy prometheus:9090
 }
