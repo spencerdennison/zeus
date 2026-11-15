@@ -17,8 +17,6 @@ Configuration for my server.
 
 ## Installation
 
-- All steps are performed on the server
-
 Update and upgrade apt package repository
 
 ```bash
