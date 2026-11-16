@@ -7,18 +7,6 @@ dns.spencerdennison.com {
     reverse_proxy pihole:80
 }
 
-dashboard.spencerdennison.com {
-    reverse_proxy glance:8080
-}
-
-music.spencerdennison.com {
-    reverse_proxy navidrome:4533
-}
-
-torrent.spencerdennison.com {
-    reverse_proxy qbittorrent:2004
-}
-
 metrics.spencerdennison.com {
     reverse_proxy prometheus:9090
 }
