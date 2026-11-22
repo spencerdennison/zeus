@@ -9,6 +9,7 @@
   roles:
     - network
     - ssh
+    - packages
     - docker
     - caddy
     - pihole
