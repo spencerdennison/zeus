@@ -1,0 +1,7 @@
+- name: install
+  ansible.builtin.apt:
+    pkg:
+      - needrestart
+      - vim
+    state: present
+    update_cache: true
