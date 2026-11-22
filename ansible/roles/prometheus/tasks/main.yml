@@ -17,5 +17,5 @@
       - '/srv/docker/prometheus/:/prometheus'
     networks:
       - name: '{{ network }}'
-    restart_policy: 'unless-stopped'
+    restart_policy: 'always'
     state: started

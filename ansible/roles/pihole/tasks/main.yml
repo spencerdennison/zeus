@@ -16,5 +16,5 @@
       - '/srv/docker/pihole:/etc/pihole'
     networks:
       - name: '{{ network }}'
-    restart_policy: 'unless-stopped'
+    restart_policy: 'always'
     state: started

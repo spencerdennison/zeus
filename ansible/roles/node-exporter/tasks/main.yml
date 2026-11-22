@@ -9,5 +9,5 @@
       - '/:/host:ro,rslave'
     networks:
       - name: '{{ network }}'
-    restart_policy: 'unless-stopped'
+    restart_policy: 'always'
     state: started

@@ -20,5 +20,5 @@
       - '/srv/docker/grafana/:/var/lib/grafana'
     networks:
       - name: '{{ network }}'
-    restart_policy: 'unless-stopped'
+    restart_policy: 'always'
     state: started
