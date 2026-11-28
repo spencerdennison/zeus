@@ -1,4 +1,4 @@
-- name: setup services server
+- name: setup zeus
   hosts: localhost
   connection: local
   vars_files:
