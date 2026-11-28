@@ -49,6 +49,14 @@ Run Ansible playbooks
 
 ## Post-Installation
 
+- Briefly Allow SSH to server using password, ensure to revert
+
+Copy SSH key from control device to server
+
+```bash
+ssh-copy-id -i ~/.ssh/key.pub administrator@zeus.spencerdennison.com
+```
+
 Add server to Tailscale network
 
 ```bash
@@ -59,14 +67,6 @@ Reboot server
 
 ```bash
 sudo reboot
-```
-
-- Briefly Allow SSH to server using password, ensure to revert
-
-Copy SSH key from control device to server
-
-```bash
-ssh-copy-id -i ~/.ssh/zeus.pub administrator@zeus.spencerdennison.com
 ```
 
 ## Architecture
