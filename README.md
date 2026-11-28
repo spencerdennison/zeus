@@ -44,7 +44,7 @@ cd zeus
 Run Ansible playbooks
 
 ```bash
-./provision
+./scripts/provision.sh
 ```
 
 ## Post-Installation
@@ -59,12 +59,6 @@ Reboot server
 
 ```bash
 sudo reboot
-```
-
-Generate new SSH key on control device
-
-```bash
-ssh-keygen -t ed25519 -f ~/.ssh/zeus
 ```
 
 - Briefly Allow SSH to server using password, ensure to revert
